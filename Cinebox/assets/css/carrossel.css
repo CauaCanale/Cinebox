@@ -21,9 +21,6 @@
 .carrossel{
     display: flex;
     transition: transform 1s ease-in-out;
-    
-
-
 }
 
 .carrossel-container>button{
@@ -41,8 +38,6 @@
 
 .carrossel-container>button.proximo{
     right: 10px;
-    
-
 }
 
 .carrossel-container>button.anterior{
