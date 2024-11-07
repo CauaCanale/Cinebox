@@ -3,6 +3,9 @@
     max-width: 1920px;
     border: 1px solid #CCCCCC;
     border-radius: 10px;
+
+    overflow: hidden;
+    position: relative;
 }
 
 #banner{
@@ -13,4 +16,35 @@
 
 #banner img{
     width: 100%;
+}
+
+.carrossel{
+    display: flex;
+    transition: transform 1s ease-in-out;
+    
+
+
+}
+
+.carrossel-container>button{
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+
+    transform: translateY(-50%);
+    position: absolute;
+    top: 50%;
+}
+
+.carrossel-container>button.proximo{
+    right: 10px;
+    
+
+}
+
+.carrossel-container>button.anterior{
+    left: 10px;
 }
