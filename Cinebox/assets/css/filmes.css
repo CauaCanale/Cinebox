@@ -5,10 +5,7 @@
     font-size: 50px;
     font-weight: 700;
 }
-
-
-
-
+/*oi*/
 #filmes-recomendados figure{
     background-color: #D9D9D9;
     padding: 15px 0;
@@ -24,7 +21,7 @@
     width: 100%;
     max-height: 380px;
     max-width: 280px;
-    border-radius: 20px;
+    border-radius: 20px; 
     object-fit: cover; /*usado para a imagem do avatar nao crescer se a pessoa ampliar o site*/
 }
 
