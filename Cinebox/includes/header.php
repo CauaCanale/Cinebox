@@ -49,7 +49,7 @@
                 <button class="fechar" onclick="Javascript:fecharNav()">
                     <i class="bi bi-x"></i>
                 </button>
-                <a href="index.html">Incio</a>
+                <a href="index.html">Inicio</a>
                 <a href="#">Filmes</a>
                 <a href="#">Sobre</a>
             </div>

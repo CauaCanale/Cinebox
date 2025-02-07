@@ -1,51 +1,8 @@
 <?php 
+$titulo = 'CINEBOX - Inicio';
 include './includes/header.php';
- ?>
-    
-    
-    <section id="banner">
-        <main class="carrossel-container">
-            <div class="carrossel">
-                <img src="./assets/img/banner/banner_00.jpg" alt="">
-                <img src="./assets/img/banner/banner_01.jpg" alt="banner 01">
-                <img src="./assets/img/banner/banner_02.jpg" alt="banner 02">
-                <img src="./assets/img/banner/banner_03.jpg" alt="banner 03">
-                <img src="./assets/img/banner/banner_04.jpg" alt="banner 04">
-                <img src="./assets/img/banner/banner_05.jpg" alt="banner 05">
-                <img src="./assets/img/banner/banner_06.jpg" alt="banner 06">
-            </div>
+include './includes/banner.php';
 
-            <button class="anterior" onclick="Javascript:voltarSlide()"><i class="bi bi-arrow-left-short"></i></button>
-            <button class="proximo" onclick="Javascript:proximoSlide()"><i class="bi bi-arrow-right-short"></i></button>
-        </main>
-    </section>
-    <section id="filmes-recomendados">
-        <h2 class="titulo">Filmes</h2>
-        <main class="container">
-            <div class="row">
+include './includes/filme_lista.php';
 
-            <?php for ($i = 0; $i < 8; $i++) { ?>
-                <div class="col col-3">
-                    <figure>
-                        <img src="./assets/img/poster/avatar-o-caminho-da-agua.png" alt="Poster do filme"
-                            class="foto-produto">
-                        <figcaption>
-                            <h4>Avatar o Caminho da Água</h4>
-                            <span class="preco">R$15,90</span>
-                            <p class="descricao">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae ut, vel
-                                facere sapiente maxime voluptatibus perspiciatis magnam libero cupiditate mollitia
-                                voluptas. Nisi consequatur expedita rem rerum nihil eveniet cumque ratione?</p>
-                        </figcaption>
-                        <span class="genero">
-                            <label style="background-color: #070373;">Fantasia</label>
-                            <label style="background-color: #580259;">Drama</label>
-                            <label style="background-color: #D966BA;">Ficção</label>
-                        </span>
-                    </figure>
-                </div>
-            <?php } ?>
-            
-            </div>
-        </main>
-    </section>
-
+include './includes/footer.php';
