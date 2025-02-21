@@ -20,7 +20,8 @@
     <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="stylesheet" href="assets/css/carrossel.css">
     <link rel="stylesheet" href="assets/css/filmes.css">
-</head>
+    <link rel="stylesheet" href="./assets/css/usuario.css"
+    </head>
 
 
 <header>
@@ -38,7 +39,7 @@
                 <li><a href="#"><i class="bi bi-search"></i></a></li>
                 <li><a href="#"><i class="bi bi-heart"></i></a></li>
                 <li><a href="#"><i class="bi bi-cart"></i></a></li>
-                <li><a href="#"><i class="bi bi-person-circle"></i></a></li>
+                <li><a href="./usuario.php"><i class="bi bi-person-circle"></i></a></li>
             </ul>
 
             <button class="menu-oculto" onclick="Javascript:abrirNav()">

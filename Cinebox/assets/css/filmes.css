@@ -39,12 +39,7 @@
     height: 55px;
 }
 
-#filmes-recomendados span.preco{
-    color: #9125A3;
-    font-weight: 700;
-    font-size: 1.2rem;
-    text-align: end;
-}
+
 
 #filmes-recomendados figcaption p{
     text-align: justify;
