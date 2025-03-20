@@ -1,7 +1,8 @@
-
+<?php
 include './includes/header.php';
 
 
+?>
 <section id="usuario-principal">
     <main class="container usuario-principal">
         <?php
@@ -11,7 +12,8 @@ include './includes/header.php';
         ?>
     </main>
 </section>
-
 <?php
+
+
 
 include './includes/footer.php';

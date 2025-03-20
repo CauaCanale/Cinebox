@@ -11,6 +11,6 @@ $dados = $filmes -> listarFilmesBanco();
 
 echo $dados;
 
-include './includes/filme_lista.php';
+include './includes/listar_filmes.php';
 
 include './includes/footer.php';

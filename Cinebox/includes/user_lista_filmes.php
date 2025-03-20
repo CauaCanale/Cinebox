@@ -1,30 +1,31 @@
-    <?php
-include './includes/header.php';
+<?php
 
-$dsn = 'mysql:dbname=bd_cinebox;host=127.0.0.1';
-$user = 'root';
+$dsn = 'mysql:dbname=db_cinebox;host=127.0.0.1';
+$user = 'root'; 
 $password = '';
 
 $banco = new PDO($dsn, $user, $password);
 
-$select = 'SELECT * FROM tb_filmes';
+$select = "SELECT * FROM tb_filmes";
 
 $resultado = $banco->query($select)->fetchAll();
 
 ?>
-    
-    <?php foreach ($resultado as $lista) {  ?>
+
+
+<?php foreach($resultado as $linha) {?>
+        
     <div class="row desc-filme">
 
         <div class="col-12 col-lg-2 col-sm-12 col-md-12 text-center">
-            <img src="./assets/img/poster/jojo-rabbit.png" alt="" class="desc-foto">
+            <img src="./assets/img/poster/<?=$linha['poster'] ?>" alt="" class="desc-foto">
         </div>
 
         <div class="col-12 col-lg-8 col-sm-12 col-md-12 mt-3">
-            <h3 class="title">Jojo Rabbit</h3>
+            <h3 class="title"> <?=$linha['nome']?></h3>
             <p class="desc-descricao">
-                Mussum Ipsum, cacilds vidis litro abertis. Casamentiss faiz malandris se pirulitá. Interessantiss quisso pudia ce receita de bolis, mais bolis eu num gostis.
-            </p>
+            <?= $linha['descricao'] ?>
+        </p>
         </div>
 
         <div class="col-12 col-lg-2 col-sm-12 col-md-12 desc-btn p-3">
@@ -37,7 +38,9 @@ $resultado = $banco->query($select)->fetchAll();
                 Excluir
             </a>
         </div>
+
     </div>
-    <?php } ?>
-    
-   
+
+
+
+        <?php } ?>

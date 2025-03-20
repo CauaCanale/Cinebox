@@ -1,8 +1,3 @@
-</body>
-<script src="./assets/js/carrossel.js"></script>
-<script src="./assets/js/offcanva.js"></script>
-</html>
-
 <footer class="footer">
     <main class="container">
         <div class="row">
@@ -49,3 +44,11 @@
         </div>
     </main>
 </footer>
+
+
+</body>
+
+<script src="assets/js/carrossel.js"></script>
+<script src="assets/js/offcanvas.js"></script>
+
+</html>
