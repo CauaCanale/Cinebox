@@ -1,0 +1,72 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+
+#filmes-recomendados>h2.titulo{
+    text-align: center;
+    margin: 10px 0;
+    text-transform: uppercase;
+    font-size: 50px;
+    font-weight: 700;
+}
+/*oi*/
+#filmes-recomendados figure{
+    background-color: #D9D9D9;
+    padding: 15px 0;
+    width: 100%;
+    max-width: 400px;
+    height: 600px;
+    border-radius: 20px;
+    text-align: center;
+}
+
+#filmes-recomendados .foto-produto{
+    height: 95%;
+    width: 100%;
+    max-height: 380px;
+    max-width: 280px;
+    border-radius: 20px; 
+    object-fit: cover; /*usado para a imagem do avatar nao crescer se a pessoa ampliar o site*/
+}
+
+#filmes-recomendados figcaption{
+    padding: 0 10%;
+    display: flex;
+    flex-grow: 1; /*para ele usar todo o espaço disponivel dentro da borda do filme avatar*/
+    flex-direction: column;
+}
+
+#filmes-recomendados figcaption h4{
+    margin-bottom: 0;
+    font-weight: 900;
+    text-align: start;
+    height: 55px;
+}
+
+#filmes-recomendados figcaption p{
+    text-align: justify;
+    display: -webkit-box; /*é um kit de ferramentas web, ele libera outras propriedades*/
+    -webkit-line-clamp: 2; /*maximo de 2 linhas da descricao*/
+    -webkit-box-orient: vertical;
+    overflow: hidden; /*comando para esconder o restante da descricao quando passar de 2 linhas*/
+    text-overflow: ellipsis;
+}
+
+#filmes-recomendados span.genero>label{
+    background-color: tomato;
+    color: #f2f2f2;
+    padding: 1px 5px;
+    border-radius: 10px;
+}
+
+.preco{
+    font-weight: 900;
+    color: blueviolet;
+}
+
+a {
+    text-decoration: none;
+    color: black; /* Substitua 'black' pela cor que preferir */
+  }
